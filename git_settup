@@ -1,0 +1,65 @@
+1. Tạo repository trên GitHub
+Truy cập GitHub và đăng nhập.
+Nhấn vào dấu + (góc trên bên phải) → Chọn New repository.
+Đặt tên repository (ví dụ: my-react-native-app).
+Chọn Public hoặc Private (tùy bạn).
+Nhấn Create repository.
+Copy URL của repository (ví dụ: https://github.com/username/my-react-native-app.git).
+2. Cấu hình Git trong project
+Mở terminal và di chuyển vào thư mục project:
+
+bash
+Copy
+Edit
+cd đường-dẫn-tới-project
+Nếu chưa khởi tạo Git, chạy lệnh sau:
+
+bash
+Copy
+Edit
+git init
+Thêm repository GitHub làm remote:
+
+bash
+Copy
+Edit
+git remote add origin https://github.com/username/my-react-native-app.git
+3. Thêm, commit và push code lên GitHub
+Bước 1: Kiểm tra trạng thái các file
+bash
+Copy
+Edit
+git status
+Các file chưa được theo dõi sẽ hiển thị màu đỏ.
+
+Bước 2: Thêm tất cả các file vào Git
+bash
+Copy
+Edit
+git add .
+Dấu . có nghĩa là thêm tất cả các file mới và đã thay đổi.
+
+Bước 3: Commit code
+bash
+Copy
+Edit
+git commit -m "Initial commit"
+Bạn có thể thay "Initial commit" bằng nội dung mô tả khác.
+
+Bước 4: Đẩy code lên GitHub
+bash
+Copy
+Edit
+git branch -M main  # Đảm bảo branch chính là "main" (hoặc "master")
+git push -u origin main
+4. Kiểm tra trên GitHub
+Sau khi git push, vào repository GitHub, bạn sẽ thấy toàn bộ code đã được upload.
+
+Lần sau khi cập nhật code, bạn chỉ cần:
+
+bash
+Copy
+Edit
+git add .
+git commit -m "Update code"
+git push origin main
